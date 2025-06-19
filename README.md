@@ -4,11 +4,11 @@ API Testing Report – Reqres API
 
 ## 1. Giới thiệu.
 
-- Tên dự án: Kiểm thử API bằng Posman
+- Tên dự án: Kiểm thử API bằng Postman
 - Ngày thực hiện: 19/06/2025
 - Người thực hiện: Nguyễn Thị Cẩm Tú
 - MSV: 22010230
-- Môi trường  kiểm thử: Posman
+- Môi trường  kiểm thử: Postman
 - Phương pháp kiểm thử: Kiểm thử thử công, kiểm thử tự động.
 
 Mục tiêu:
@@ -33,14 +33,18 @@ Mục tiêu:
 |--------|--------------------------------|------------------------------|
 | GET    | /api/users?page=2             | Lấy danh sách người dùng     |
 
-## 4. Kiểm thử bằng Posman.
+## 4. Kiểm thử bằng Postman.
 
 a. Tạo, gửi và test API request:
 
 Thêm Request:
+
 GET: https://reqres.in/api/users?page=2
+
 POST: https://reqres.in/api/users
+
 PUT: https://reqres.in/api/users/2
+
 DELETE: https://reqres.in/api/users/2
 ![Screenshot (1356)](https://github.com/user-attachments/assets/3e436620-604d-49fc-ba4b-2d6747e04bc7)
 
@@ -58,10 +62,14 @@ newman run collection.json
 ## 5. Tổng kết.
 
 a. Kết quả kiểm thử:
+
 Tổng số request: 1
+
 Tổng số test: 2	
+
 Pass: 2	
-Fail: 
+
+Fail: 0 
 
 b. Kết luận: 
 Bài kiểm thử đã thực hiện thành công việc gửi request và kiểm tra phản hồi từ API. Dựa vào script, ta đã xác định đúng mã phản hồi và cấu trúc dữ liệu trong body. Đây là tiền đề tốt cho việc tự động hóa test backend API trong các dự án thực tế.
